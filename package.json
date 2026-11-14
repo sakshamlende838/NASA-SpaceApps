@@ -1,0 +1,21 @@
+{
+  "name": "ignis-track",
+  "version": "2.0.0",
+  "description": "Harmonization of MODIS and VIIRS Hot Spots — NASA Space Apps Challenge 2026",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node -e \"console.log('Testing server health...'); fetch('http://127.0.0.1:8080/api/v1/health').then(r=>r.json()).then(console.log)\""
+  },
+  "keywords": [
+    "nasa-space-apps",
+    "earth-science",
+    "modis",
+    "viirs",
+    "wildfire",
+    "fire-activity-calendar",
+    "harmonization"
+  ],
+  "author": "Saksham",
+  "license": "MIT"
+}
