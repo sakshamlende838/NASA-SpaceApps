@@ -1,0 +1,66 @@
+{
+  "grid": {
+    "type": "latlon",
+    "resolution_deg": 0.01,
+    "description": "0.01 degree (~1.1 km at equator) shared spatial binning"
+  },
+  "filters": {
+    "default_min_conf": "nominal",
+    "keep_fire_types": [0]
+  },
+  "harmonization": {
+    "calibration": "monthly_ratio",
+    "min_overlap_days": 30,
+    "overlap_start_year": 2012,
+    "scale": "modis_equivalent",
+    "methodology": "k_month = median(VIIRS_cells / MODIS_cells); active_cells_harmonized = VIIRS / k_month"
+  },
+  "anomaly": {
+    "method": "robust_z",
+    "formula": "(x - median) / (1.4826 * MAD)",
+    "window_days": 15,
+    "min_baseline_years": 5,
+    "thresholds": {
+      "normal": 1.5,
+      "elevated": 3.0,
+      "unusual": 3.01
+    }
+  },
+  "limits": {
+    "max_aoi_km2": 500000,
+    "max_span_years": 25,
+    "max_points": 20000
+  },
+  "sources": [
+    {
+      "id": "MODIS_SP",
+      "name": "MODIS Terra & Aqua",
+      "resolution": "1 km",
+      "instruments": ["MODIS"],
+      "satellites": ["Terra", "Aqua"],
+      "start_year": 2000,
+      "status": "Legacy/Standard Archive (C6.1)",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "VIIRS_SNPP_SP",
+      "name": "VIIRS Suomi-NPP",
+      "resolution": "375 m",
+      "instruments": ["VIIRS"],
+      "satellites": ["Suomi-NPP"],
+      "start_year": 2012,
+      "status": "Active (Collection 2)",
+      "color": "#10B981"
+    },
+    {
+      "id": "VIIRS_NOAA20_SP",
+      "name": "VIIRS NOAA-20",
+      "resolution": "375 m",
+      "instruments": ["VIIRS"],
+      "satellites": ["NOAA-20"],
+      "start_year": 2018,
+      "status": "Active (Collection 2)",
+      "color": "#8B5CF6"
+    }
+  ]
+}
