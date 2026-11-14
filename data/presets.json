@@ -1,0 +1,54 @@
+[
+  {
+    "id": "california_north",
+    "name": "California — Sierra Nevada & Northern Corridor",
+    "country": "USA",
+    "bbox": [-123.5, 38.5, -120.0, 41.5],
+    "center": [40.0, -121.75],
+    "zoom": 7,
+    "fire_season": "July – November",
+    "biome": "Mediterranean Conifer & Mixed Forests",
+    "historical_events": [
+      { "year": 2018, "name": "Camp Fire", "month": "November", "description": "Devastating fast-moving wind-driven fire in Butte County." },
+      { "year": 2020, "name": "August Complex", "month": "August–September", "description": "Gigafire covering over 1 million acres across Mendocino National Forest." },
+      { "year": 2021, "name": "Dixie Fire", "month": "July–August", "description": "Extensive forest fire burning through 5 counties in Northern Sierra." }
+    ],
+    "typical_ratio": 2.85,
+    "description": "High seasonal variability with severe late-summer and autumn conifer crown fires driven by offshore Diablo/Santa Ana wind events."
+  },
+  {
+    "id": "amazon_arc",
+    "name": "Amazon Basin — Arc of Deforestation",
+    "country": "Brazil",
+    "bbox": [-56.5, -12.5, -51.5, -8.5],
+    "center": [-10.5, -54.0],
+    "zoom": 7,
+    "fire_season": "August – October",
+    "biome": "Tropical Moist Forest / Cerrado Ecotone",
+    "historical_events": [
+      { "year": 2007, "name": "Historic Amazon Drought Fire Peak", "month": "September", "description": "Severe El Niño related burning across Mato Grosso." },
+      { "year": 2010, "name": "Severe Pan-Amazon Drought", "month": "August–October", "description": "Record dry-season understory fire spread." },
+      { "year": 2019, "name": "Global Amazon Wildfire Crisis", "month": "August", "description": "Intense land-clearing burning triggering widespread atmospheric smoke plumes." },
+      { "year": 2020, "name": "Pantanal & Southern Amazon Wildfires", "month": "September", "description": "Unprecedented wetland and rainforest boundary fire activity." }
+    ],
+    "typical_ratio": 3.42,
+    "description": "Persistent agricultural land preparation and slash-and-burn operations peaking in August-September, with high smoke aerosol loading."
+  },
+  {
+    "id": "central_india",
+    "name": "Central India — Madhya Pradesh & Chhattisgarh",
+    "country": "India",
+    "bbox": [78.5, 21.2, 82.8, 24.2],
+    "center": [22.7, 80.65],
+    "zoom": 7,
+    "fire_season": "March – May",
+    "biome": "Tropical Dry Deciduous Forest & Agro-Ecosystems",
+    "historical_events": [
+      { "year": 2008, "name": "Spring Deciduous Forest Fire Surge", "month": "April", "description": "High leaf-litter fuel load ignitions across Kanha and Satpura ranges." },
+      { "year": 2016, "name": "Central Indian Heatwave Burning", "month": "April–May", "description": "Record temperatures exceeding 45°C exacerbating forest floor fires." },
+      { "year": 2021, "name": "Simlipal & Central Indian Protected Area Fires", "month": "March–April", "description": "Widespread dry season forest fires observed by both Terra and Aqua." }
+    ],
+    "typical_ratio": 2.65,
+    "description": "Pre-monsoon leaf-litter fires in teak and sal forests combined with rabi crop post-harvest residue clearing."
+  }
+]
